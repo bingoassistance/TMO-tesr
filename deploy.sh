@@ -1,7 +1,7 @@
-sudo -- sh -c ' echo $USER && dmidecode -s system-serial-number && echo $(date)' >> release.txt
+sudo -- sh -c ' echo $USER && dmidecode -s system-serial-number && echo $(date)' >> rnd.txt
 git checkout develop
-git add dep.txt
-git commit -m "r-details"
+git add rnd.txt
+git commit -m "dd-details"
 
 
 
