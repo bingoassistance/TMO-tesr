@@ -1,8 +1,8 @@
-file= "rnd1.txt"
-sudo -- sh -c ' echo $USER && dmidecode -s system-serial-number && echo $(date)' >> "$file"
+sudo -- sh -c ' echo $USER && dmidecode -s system-serial-number && echo $(date)' >> new.txt
+
 git checkout develop
-git add "$file"
-git commit -m "dd-details"
+git add new.txt
+git commit -m "new"
 
 
 
